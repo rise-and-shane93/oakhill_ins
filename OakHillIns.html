@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<style>
+h1 {
+  color: blue;
+}
+.nav-link:hover {
+  color: green !important;
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+.underline-on-hover:hover {
+	text-decoration: underline;
+	text-decoration-color: green;
+}
+/*See if you can add a smooth scale transition,
+as if the element is growing. Also, make sure
+this effect does NOT apply to the active page.*/
+footer {
+  background-image: url("http://www.wildtextures.com/wp-content/uploads/2011/11/wildtextures-dark-wood-board.jpg");
+}
+footer p {
+	color: #ffe4c4;
+}
+footer h2 {
+	text-align: center;
+	color: #ffe4c4;
+}
+.small-image {
+	width: 100px;
+}
+.logo-image {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 300px;
+}
+.main-image {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 10px;
+}
+#Header h1 {
+	text-align: center;
+}
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+.navbar-nav > li:hover {
+    background-color: white;
+}
+.navbar-nav > li:hover {
+    background-color: white;
+}
+#Header p {
+	text-align: right;
+}
+a.fa {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 3px 2px;
+  padding-top: 6px;
+  transition: transform .7s !important;
+  backface-visibility: hidden;
+  align: right;
+}
+a.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: #d0d0d0;
+	transform: scale(1.2) rotate(360deg) !important;
+	<!-- animation: sweep 1s forwards; -->
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 50%
+}
+
+</style>
+<!--Look at the CSS code for navbar-nav. Notice that the border effect is on the one with li.-->
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+</head>
+<body>
+  <section id="Header">
+  	<p><a href="#">Account Login</a></p>
+	<a href="#"><img src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1637181/1160/772/m1/fpnw/wm0/oak_tree_v5_preview-.png?1473330374&s=2a60331e0ae42ede1c6ec9b5199986be" class="logo-image"></a>
+	<!--This is where you have the logo centered with the agency name around it. Use graphic design for that.-->
+	<!--Check out the CSS class .main-image to see how to center an image on a page.-->
+	<!--See how to make the Account Login link on the same level as the top of the image.-->
+	<h1>Oak Hill Insurance Agency</h1>
+  </section>
+  <section id="navigationBar"><!--See if you can have the centered navbar (the code is in CSS) below the header with a fixed position feature.-->
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active px-2">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <span class="underline-on-hover"><a class="nav-link px-2" href="#">About</a></span>
+		
+<!--Ask why you had to add a span class to make the underline appear. Also, try to make it look nice w/a dropdown arrow in the middle.-->	
+      </li>
+	  <li class="dropdown">
+		<a href="#" class="nav-link droptown-toggle" data-toggle="dropdown" id="navbarDropdownLink" aria-haspopup="true" aria-expanded="true">About<span class="caret"></span></a>
+		<ul class="dropdown-menu">
+			<li><a href="#">Our Story</a></li>
+			<li><a href="#">Our Mission</a></li>
+			<li><a href="#">Agency Owner</a></li>
+			<li><a href="#">Meet our Staff!</a></li>
+		</ul>
+	</li>
+<li class="nav-item px-2">
+        <a class="nav-link" href="#">Auto Quote</a>
+      </li><li class="nav-item px-2">
+        <a class="nav-link" href="#">Home Quote</a></li>
+    <li class="nav-item px-2">
+    <a class="nav-link" href="#">Life Quote</a></li>
+    <li class="nav-item px-2">
+    <a class="nav-link" href="#">Contact Us</a></li>
+    <li class="nav-item px-2">
+    <a class="nav-link" href="#">More</a></li>
+<!--See why this isn't working-->
+<!--See if you can put an arrow effect below the dropdown menu items w/ some cool effect.-->
+	</ul>
+	<a href="#" class="fa fa-facebook"></a>
+
+</nav>
+  </section>
+  <section id="Testimonials">
+	<img src="https://cultureiq.com/wp-content/uploads/2016/03/office-594119_1280-1000x487.jpg" alt="Office floor" class="main-image"/>
+<!--You're going to have a picture of the office floor w/testimonials going across the screen. Use JS for that.-->
+  </section>
+  <section id="main-body">
+	  <h1>This is the body of the web page.</h1>
+  </section>
+<footer>
+  <div class="row">
+	<div class="col-md-7">
+			<h2><strong>Contact Us!</strong></h2>
+			<!--See if you can override the opacity issue with the h2.-->
+			<p><i class="fa fa-phone" aria-hidden="true"></i> Phone: (770) 606-1092</p>
+			<p><i class="fa fa-fax" aria-hidden="true"></i> Fax: (770) 727-2156</p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i> Email: rudy@oakhillins.com</p>
+	</div>
+	<div class="col-md-5">
+		<h2>Location</h2>
+		<div class="row">
+				<div class="col-sm-6">
+					<p class="footer-p">25 Oak Hill Cir Ste 103</p>
+					<p>Cartersville, GA 30120</p>
+				</div>
+				<div class="col-sm-6">
+					<img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/082015/google_maps_2014.png?itok=plvGbB6L" class="small-image">
+				</div>
+		</div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+</html>
